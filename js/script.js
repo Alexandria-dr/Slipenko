@@ -32,6 +32,15 @@ function checkScroll() {
     }
 
 }
-
 window.addEventListener('scroll', checkScroll, false);
 window.addEventListener('resize', checkScroll, false);
+
+const mainVideo = document.querySelector('.work__videos__active');
+const clickVideo = document.querySelectorAll('.video-link[data-videoLink]');
+
+clickVideo.forEach(element => {
+element.addEventListener('click', ()=>{
+    let a = element.getAttribute('data-videoLink');
+   mainVideo.innerHTML = a;
+})    
+});
