@@ -303,6 +303,82 @@ button {
   content: none;
 }
 
+.passion__img {
+  max-width: 620px;
+  max-height: 410px;
+  margin: auto 30px auto 0;
+}
+
+.passion__img img {
+  width: 100%;
+  height: auto;
+}
+
+.passion__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.passion__text {
+  font-weight: 300;
+  max-width: 900px;
+  font-size: 1.7rem;
+}
+
+.passion__text h3 {
+  font-weight: 300;
+  font-size: 2rem;
+  font-variant: small-caps;
+}
+
+.passion__container {
+  padding: 0px 130px 70px 150px;
+  margin: 10px 10px 20px;
+  border-bottom: 2px solid #f04646;
+  position: relative;
+}
+
+.passion__container::before {
+  position: absolute;
+  content: "";
+  background-color: #f04646;
+  width: 2px;
+  top: 50px;
+  bottom: -20px;
+  left: 20px;
+}
+
+.passion__container::after {
+  position: absolute;
+  content: "";
+  background-color: #f04646;
+  width: 2px;
+  top: 50px;
+  bottom: -20px;
+  right: 20px;
+}
+
+.passion__container h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  max-width: 550px;
+}
+
+.video h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.video video {
+  width: 100%;
+  max-height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 @media (max-width: 1330px) {
   .header__img::before {
     content: none;
@@ -356,6 +432,27 @@ button {
   }
   .stat__container {
     padding: 20px 20px 20px 20px;
+  }
+  .passion__container {
+    padding: 0px 50px 30px 50px;
+  }
+  .passion__container::after, .passion__container::before {
+    top: 100px;
+  }
+  .passion__container h2 {
+    font-size: 1.8rem;
+  }
+  .passion__text {
+    font-size: 1.3rem;
+  }
+  .passion__text h3 {
+    font-size: 1.7rem;
+  }
+  .passion__img {
+    max-width: 400px;
+  }
+  .video h2 {
+    font-size: 2rem;
   }
 }
 
@@ -519,6 +616,17 @@ button {
   .stat__item:first-child::before {
     content: none;
   }
+  .passion__info {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .passion__img {
+    max-width: 600px;
+    margin: 0;
+  }
+  .video h2 {
+    font-size: 1.6rem;
+  }
 }
 
 @media (max-width: 500px) {
@@ -527,6 +635,29 @@ button {
   }
   .header__p {
     padding-left: 0px;
+  }
+  .passion__container {
+    padding: 0px 30px 10px 30px;
+    margin: 0 0 10px 0;
+  }
+  .passion__container::before {
+    top: 50px;
+    bottom: -20px;
+    left: 10px;
+  }
+  .passion__container::after {
+    top: 50px;
+    bottom: -20px;
+    right: 10px;
+  }
+  .passion__container h2 {
+    font-size: 1.6rem;
+  }
+  .passion__text {
+    font-size: 1.2rem;
+  }
+  .passion__text h3 {
+    font-size: 1.4rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
