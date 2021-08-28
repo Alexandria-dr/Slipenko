@@ -38,11 +38,18 @@ nav {
   background-color: white;
   &.is-scroll {
     box-shadow: 5px 0 5px rgba(0, 0, 0, 0.6);
+    .nav__logo {
+      img {
+        width: 50px;
+        height: 70px;
+      }
+    }
   }
 }
 .nav__logo {
   z-index: 21;
   img {
+    transition: all 0.3s ease-out;
     width: 70px;
     height: 90px;
   }
