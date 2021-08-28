@@ -5,7 +5,7 @@
     }
   }
   .header__container {
-    padding: 10px 70px;
+    padding: 80px 70px 10px;
   }
 
   .stat__container {
@@ -62,7 +62,7 @@
     margin: 0;
   }
   .header__container {
-    padding: 10px 20px;
+    padding: 80px 20px 10px;
   }
 
   .stat__container {
@@ -155,6 +155,59 @@
     p {
       font-size: 1.2rem;
     }
+  }
+  .reviews {
+    h3 {
+      font-size: 1.8rem;
+      padding: 5px 20%;
+    }
+  }
+  .reviews__container {
+    padding: 10px 50px;
+    h2 {
+      text-align: center;
+      font-size: 1.8rem;
+    }
+  }
+  .profile__name {
+    p {
+      font-size: 1.2rem;
+      &:nth-child(2) {
+      }
+    }
+    margin-right: 30px;
+  }
+  .reviews__item_text {
+    p {
+      font-size: 1.4rem;
+      margin-bottom: 0;
+    }
+  }
+  .footer {
+    h3 {
+      font-size: 1.4rem;
+      i {
+        font-size: 1.1rem;
+      }
+    }
+  }
+  .footer__logo {
+    font-size: 1.8rem;
+  }
+  .footer__social {
+    p {
+      font-size: 1.3rem;
+    }
+    a {
+      color: white;
+      font-size: 2rem;
+    }
+    li {
+      margin-right: 20px;
+    }
+  }
+  .footer__container {
+    padding: 0 20px 0px;
   }
 }
 
@@ -358,6 +411,20 @@
       }
     }
   }
+  .reviews__item {
+    flex-direction: column;
+    align-items: flex-start;
+
+    &:last-child {
+      margin-bottom: 10px;
+    }
+  }
+  .reviews__container {
+    padding: 10px 20px;
+  }
+  .profile__name {
+    margin-right: 0;
+  }
 }
 
 @media (max-width: 500px) {
@@ -399,6 +466,51 @@
     p {
       font-size: 1.2rem;
       margin: 40px auto 20px;
+    }
+  }
+  .profile__pic {
+    width: 80px;
+    height: 80px;
+
+    img {
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+    }
+  }
+  .profile__name {
+    min-width: 100px;
+    p {
+      &:nth-child(2) {
+        padding-left: 0px;
+      }
+    }
+  }
+  .reviews {
+    h3 {
+      font-size: 1.6rem;
+      padding: 5px 10%;
+    }
+  }
+  .reviews__item {
+    justify-content: center;
+  }
+  .footer__main {
+    flex-direction: column;
+  }
+  .footer__logo {
+    p {
+      margin: 10px;
+    }
+  }
+  .footer {
+    h3 {
+      margin-top: 30px;
+      font-size: 1.2rem;
+      i {
+        font-size: 1rem;
+      }
     }
   }
 }

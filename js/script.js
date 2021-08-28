@@ -44,3 +44,43 @@ element.addEventListener('click', ()=>{
    mainVideo.innerHTML = a;
 })    
 });
+
+const nav = document.querySelector("nav");
+function toggleTopMenu() {
+  if (pageYOffset > 30) {
+    nav.classList.add("is-scroll");
+  } else {
+    nav.classList.remove("is-scroll");
+  }
+}
+window.addEventListener("scroll", toggleTopMenu);
+
+const menuLinks = document.querySelectorAll(".menu-link[data-goto]");
+if (menuLinks.length > 0) {
+  menuLinks.forEach((menuLink) => {
+    menuLink.addEventListener("click", onMenuLinkClick);
+  });
+  function onMenuLinkClick(e) {
+    const menuLink = e.target;
+    if (
+      menuLink.dataset.goto &&
+      document.querySelector(menuLink.dataset.goto)
+    ) {
+      const gotoBlock = document.querySelector(menuLink.dataset.goto);
+      const gotoBlockValue =
+        gotoBlock.getBoundingClientRect().top +
+        pageYOffset -
+        document.querySelector(".nav__container").offsetHeight +
+        20;
+      if (menuLink.classList.contains("burger-item")) {
+        navButton.click();
+      }
+
+      window.scrollTo({
+        top: gotoBlockValue,
+        behavior: "smooth",
+      });
+      e.preventDefault();
+    }
+  }
+}

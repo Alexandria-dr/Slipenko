@@ -17,11 +17,19 @@
           </div>
 
           <ul class="menu-list desc">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">What i’m shooting</a></li>
-            <li><a href="#">Reviews</a></li>
-            <li><a href="#">Service</a></li>
+            <li><a data-goto=".header" class="menu-link" href="#">Home</a></li>
+            <li><a data-goto=".stat" class="menu-link" href="#">About</a></li>
+            <li>
+              <a data-goto=".video" class="menu-link" href="#"
+                >What i’m shooting</a
+              >
+            </li>
+            <li>
+              <a data-goto=".reviews" class="menu-link" href="#">Reviews</a>
+            </li>
+            <li>
+              <a data-goto=".offer" class="menu-link" href="#">Service</a>
+            </li>
           </ul>
           <div class="nav__btn desc">
             <button>EN\RU</button>
@@ -29,11 +37,31 @@
 
           <div class="nav__burger-menu_mobile">
             <ul class="menu-list">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">What i’m shooting</a></li>
-              <li><a href="#">Reviews</a></li>
-              <li><a href="#">Service</a></li>
+              <li>
+                <a data-goto=".header" class="burger-item menu-link" href="#"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a data-goto=".stat" class="burger-item menu-link" href="#"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a data-goto=".video" class="burger-item menu-link" href="#"
+                  >What i’m shooting</a
+                >
+              </li>
+              <li>
+                <a data-goto=".reviews" class="burger-item menu-link" href="#"
+                  >Reviews</a
+                >
+              </li>
+              <li>
+                <a data-goto=".offer" class="burger-item menu-link" href="#"
+                  >Service</a
+                >
+              </li>
             </ul>
             <div class="nav__btn">
               <button>EN\RU</button>
@@ -301,6 +329,95 @@
           </div>
         </div>
       </section>
+      <section class="reviews">
+        <div class="reviews__container">
+          <h2>Reviews</h2>
+          <div class="reviews__items">
+            <div class="reviews__item">
+              <div class="reviews__item_profile">
+                <div class="profile__pic">
+                  <img src="./img/avatar1.jpg" alt="avatar" />
+                </div>
+                <div class="profile__name">
+                  <p class="prof__name">Liza - 24</p>
+                  <p class="prof__city">Tokyo</p>
+                </div>
+              </div>
+              <div class="reviews__item_text">
+                <p>
+                  I am very grateful to Darina for all the photos, it's amazing!
+                </p>
+              </div>
+            </div>
+            <div class="reviews__item">
+              <div class="reviews__item_profile">
+                <div class="profile__pic">
+                  <img src="./img/avatar2.jpg" alt="avatar" />
+                </div>
+                <div class="profile__name">
+                  <p class="prof__name">Mark - 24</p>
+                  <p class="prof__city">London</p>
+                </div>
+              </div>
+              <div class="reviews__item_text">
+                <p>
+                  In all the photos I am beautiful thanks to Darina's skill.
+                </p>
+              </div>
+            </div>
+            <div class="reviews__item">
+              <div class="reviews__item_profile">
+                <div class="profile__pic">
+                  <img src="./img/avatar3.jpg" alt="avatar" />
+                </div>
+                <div class="profile__name">
+                  <p class="prof__name">Alice - 24</p>
+                  <p class="prof__city">Moscow</p>
+                </div>
+              </div>
+              <div class="reviews__item_text">
+                <p>
+                  I am very glad to have works made by Darina in my family
+                  album!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3>
+          The best part of work - is getting your warm feedback after every job.
+        </h3>
+      </section>
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__main">
+            <div class="footer__logo">
+              <p>
+                Darina <br />
+                Slipenko.co
+              </p>
+            </div>
+            <div class="footer__social">
+              <p>Follow this media for more</p>
+              <ul>
+                <li>
+                  <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-twitter-square"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <h3><i class="far fa-copyright"></i> Copyright 2021</h3>
+        </div>
+      </footer>
     </div>
 
     <script src="./js/script.js"></script>
