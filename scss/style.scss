@@ -397,6 +397,7 @@ button {
     text-align: center;
     margin-top: 80px;
     position: relative;
+
     &::before {
       position: absolute;
       content: "";
@@ -420,6 +421,105 @@ button {
     img {
       transform: scale(1.05);
     }
+  }
+}
+
+.offer__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 80px;
+  padding: 20px 100px;
+  h2 {
+    text-align: center;
+    font-size: 2.6rem;
+    font-weight: 500;
+    font-variant: small-caps;
+  }
+}
+.offer__service {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    background-color: black;
+    top: 0;
+    bottom: -10px;
+    right: -40px;
+    width: 1px;
+  }
+}
+.gear__item_img {
+  max-width: 300px;
+  img {
+    width: 100%;
+  }
+}
+.gear__item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+  align-items: center;
+  margin-bottom: 10px;
+  p {
+    font-family: $mitr;
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 35px;
+  }
+}
+.service__items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: max-content;
+  margin-bottom: 20px;
+  a {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+  }
+}
+.service__item {
+  border: 1px solid black;
+  margin: 10px 0px 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px 0 40px;
+  min-width: 453px;
+  p {
+    font-family: $mitr;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 10px 0;
+  }
+  a {
+    font-size: 1.2rem;
+    position: relative;
+    margin-left: 30px;
+    span.mobile {
+      display: none;
+    }
+    &::before {
+      position: absolute;
+      content: "";
+      background-color: black;
+      width: 1px;
+      top: 0;
+      bottom: 0;
+      left: -25px;
+    }
+  }
+}
+.service__links {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5rem;
+  text-decoration: underline;
+  text-align: center;
+  text-decoration-color: #ae6997;
+  a:first-child {
+    margin-right: 15px;
+    margin-bottom: 15px;
   }
 }
 
