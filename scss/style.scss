@@ -495,6 +495,12 @@ button {
   a {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
+    transition: all 0.3s ease-out;
+    &:hover {
+      color: #f04646;
+      text-decoration: underline;
+      text-decoration-color: #f04646;
+    }
   }
 }
 .service__item {
@@ -518,6 +524,7 @@ button {
     span.mobile {
       display: none;
     }
+
     &::before {
       position: absolute;
       content: "";
@@ -536,6 +543,13 @@ button {
   text-decoration: underline;
   text-align: center;
   text-decoration-color: #ae6997;
+  a {
+    &:hover {
+      color: #f04646;
+      text-decoration: underline;
+      text-decoration-color: #f04646;
+    }
+  }
   a:first-child {
     margin-right: 15px;
     margin-bottom: 15px;
@@ -649,6 +663,11 @@ button {
   a {
     color: white;
     font-size: 2rem;
+    transition: all 0.3s ease-out;
+
+    &:hover {
+      color: #ffdd66;
+    }
   }
   li {
     margin-right: 35px;

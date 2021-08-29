@@ -606,6 +606,15 @@ button {
 .service__items a {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.service__items a:hover {
+  color: #f04646;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #f04646;
+          text-decoration-color: #f04646;
 }
 
 .service__item {
@@ -662,6 +671,13 @@ button {
   text-align: center;
   -webkit-text-decoration-color: #ae6997;
           text-decoration-color: #ae6997;
+}
+
+.service__links a:hover {
+  color: #f04646;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #f04646;
+          text-decoration-color: #f04646;
 }
 
 .service__links a:first-child {
@@ -828,6 +844,12 @@ button {
 .footer__social a {
   color: white;
   font-size: 2rem;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.footer__social a:hover {
+  color: #ffdd66;
 }
 
 .footer__social li {
